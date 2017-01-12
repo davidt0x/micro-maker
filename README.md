@@ -31,6 +31,12 @@ If everything goes smoothly you should eventually see and figure output that sho
 
 ![Reconstruction optimization progress output](docs/images/Optimization_Screenshot.png)
 
+## Limitations
+
+- Currently, Microstructure Maker only supports binary (2-phas images). Very minor modifications can be made to support greyscale images and will be done soon. In the future, we will concentrate on support for polycrystalline datasets.
+
+- These methods are computationally intensive. We suggest a machine with a minimum of 4 cores and at least 16 GB of memory. This will allow reconstructions of at least 100^3 voxels.
+
 ## References
 - David M. Turner, Surya R. Kalidindi, Statistical construction of 3-D microstructures from 2-D exemplars collected on oblique sections, Acta Materialia, Volume 102, 1 January 2016, Pages 136-148, ISSN 1359-6454, http://dx.doi.org/10.1016/j.actamat.2015.09.011.
 (http://www.sciencedirect.com/science/article/pii/S1359645415006771)
