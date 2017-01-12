@@ -59,13 +59,13 @@ recon_params.NUM_CORES = 4;
 recon_params.ANN_ALGO = 'FLANN';
 
 % Turn on neighborhood weigthing.
-recon_params.UseNeighborhoodSearchWeights = true;
+recon_params.UseNeighborhoodSearchWeights = false;
 
 % Lets setup the reconstruction object. This may take a bit.
 ReconH = SetupReconMultiRes(recon_params);
 
 % Run the reconstruction
-[S_star, Recon] = Reconstruct(ReconH, [2, 10, 20]);
+[S_star, Recon] = Reconstruct(ReconH, [5, 25, 50]);
 
 % Cleanup all the memory allocated 
 DestroyReconMultiRes(Recon);
