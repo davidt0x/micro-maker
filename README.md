@@ -19,9 +19,9 @@ cd src/matlab
 build_mex
 ```
 
-- Microstructure Maker makes heavy use of approximate nearest neighbor (ANN) searching. To accomplish this we have leveraged the wonderful work of Marius Muja and David Lowe, specifically, their software called FLANN (https://github.com/mariusmuja/flann). We use the MATLAB MEX bindings of this project so these must be on your path or you will receive and error. 
+- Microstructure Maker makes heavy use of approximate nearest neighbor (ANN) search. To accomplish this we have leveraged the wonderful work of Marius Muja and David Lowe, specifically, their software called FLANN (https://github.com/mariusmuja/flann). We use the MATLAB MEX bindings of this project so these must be on your path or you will receive and error. 
 
-- Finally, to run and example simply execute:
+- Finally, to run an example simply execute:
 
 ```matlab
 RunReconTest
