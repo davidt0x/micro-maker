@@ -19,9 +19,9 @@ cd src/matlab
 build_mex
 ```
 
-- Microstructure Maker makes heavy use of approximate nearest neighbor (ANN) searching. To accomplish this we have leveraged the wonderful work of Marius Muja and David Lowe, specifically, their software called FLANN (https://github.com/mariusmuja/flann). We use the MATLAB MEX bindings of this project so these must be on your path or you will receive and error. 
+- Microstructure Maker makes heavy use of approximate nearest neighbor (ANN) search. To accomplish this we have leveraged the wonderful work of Marius Muja and David Lowe, specifically, their software called FLANN (https://github.com/mariusmuja/flann). We use the MATLAB MEX bindings of this project so these must be on your path or you will receive and error. 
 
-- Finally, to run and example simply execute:
+- Finally, to run an example simply execute:
 
 ```matlab
 RunReconTest
@@ -29,8 +29,13 @@ RunReconTest
 
 If everything goes smoothly you should eventually see and figure output that shows the progress of the reconstruction optimization that looks something like this:
 
+![Reconstruction optimization progress output](docs/images/Optimization_Screenshot.png)
 
+## Limitations
 
+- Currently, Microstructure Maker only supports black and white (2-phase images). Very minor modifications can be made to support greyscale images and will be done soon. In the future, we will concentrate on support for polycrystalline datasets.
+
+- These methods are computationally intensive. We suggest a machine with a minimum of 4 cores and at least 16 GB of memory. This will allow reconstructions of at least 100^3 voxels.
 
 ## References
 - David M. Turner, Surya R. Kalidindi, Statistical construction of 3-D microstructures from 2-D exemplars collected on oblique sections, Acta Materialia, Volume 102, 1 January 2016, Pages 136-148, ISSN 1359-6454, http://dx.doi.org/10.1016/j.actamat.2015.09.011.
